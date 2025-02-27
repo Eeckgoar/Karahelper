@@ -6,6 +6,7 @@ import time
 import os
 from pywinauto import Desktop, mouse
 from subprocess import Popen
+import pyperclip
 
 
 
@@ -36,8 +37,8 @@ def save_playlist():
         save_dialog = player.window(title="Save history to...")
         
         # Вводим путь для сохранения
-
-        save_dialog.Edit.set_text(save_path)
+        pyperclip.copy(save_path)
+        save_dialog.type_keys("^V")
 
         
         # Нажимаем кнопку "Save"
