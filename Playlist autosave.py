@@ -15,7 +15,7 @@ import pyperclip
 karafun_path = r"C:\Program Files (x86)\KaraFun Player 2\KarafunPlayer.exe"
 
 # Путь для сохранения списка песен
-save_path = r"Playlist.txt"
+save_path = r"C:\Users\а\Documents\KFPlayer Autosave\Playlist.txt"
 
 # Запуск Karafun Player (если он еще не запущен)
 Popen(karafun_path)
